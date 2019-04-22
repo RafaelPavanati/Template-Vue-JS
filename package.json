@@ -1,0 +1,84 @@
+{
+  "name": "vue-sidebar-menu",
+  "description": "A Vue.js Sidebar Menu Component",
+  "version": "3.6.2",
+  "author": "yaminncco <yaminncco@gmail.com>",
+  "license": "MIT",
+  "main": "dist/vue-sidebar-menu.js",
+  "files": [
+    "dist",
+    "store"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaminncco/vue-sidebar-menu.git"
+  },
+  "homepage": "https://yaminncco.github.io/vue-sidebar-menu/",
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vue-sidebar",
+    "vue-sidebar-menu",
+    "sidebar",
+    "sidebar-menu",
+    "admin-sidebar"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --open --config webpack.config.dev.js",
+    "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.dev.js",
+    "build:lib": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.prod.js",
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.14",
+    "correios-lib": "git+https://github.com/jhonystein/correios-lib.git",
+    "sockjs": "^0.3.19",
+    "u": "^0.1.0",
+    "vue": "^2.6.9",
+    "vue-notification": "^1.3.16",
+    "vue-resource": "^1.5.1",
+    "vue-the-mask": "^0.11.1",
+    "vuejs-paginate": "^2.1.0",
+    "webstomp-client": "^1.2.6"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.4.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^1.1.4",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^15.5.0",
+    "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.6.9",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  }
+}
